@@ -1,0 +1,797 @@
+{
+    "@attributes": {
+      "name": "Taste of Pain",
+      "address": "Vanalinna 1"
+    },
+    "tables": {
+      "table": [
+        {
+          "@attributes": {
+            "id": "1",
+            "seats": "4",
+            "occupied": "false"
+          }
+        },
+        {
+          "@attributes": {
+            "id": "2",
+            "seats": "2",
+            "occupied": "true"
+          }
+        },
+        {
+          "@attributes": {
+            "id": "3",
+            "seats": "6",
+            "occupied": "false"
+          }
+        },
+        {
+          "@attributes": {
+            "id": "4",
+            "seats": "3",
+            "occupied": "true"
+          }
+        },
+        {
+          "@attributes": {
+            "id": "5",
+            "seats": "4",
+            "occupied": "false"
+          }
+        }
+      ]
+    },
+    "menu": {
+      "dish": [
+        {
+          "@attributes": {
+            "id": "101",
+            "type": "main"
+          },
+          "name": "Grilled Salmon",
+          "price": "15.99",
+          "allergyTags": "fish"
+        },
+        {
+          "@attributes": {
+            "id": "102",
+            "type": "appetizer"
+          },
+          "name": "Caesar Salad",
+          "price": "7.50",
+          "allergyTags": "nuts"
+        },
+        {
+          "@attributes": {
+            "id": "103",
+            "type": "drink"
+          },
+          "name": "Red Wine",
+          "price": "8.00",
+          "allergyTags": "none"
+        },
+        {
+          "@attributes": {
+            "id": "104",
+            "type": "main"
+          },
+          "name": "Chicken Alfredo Pasta",
+          "price": "13.50",
+          "allergyTags": "dairy, gluten"
+        },
+        {
+          "@attributes": {
+            "id": "105",
+            "type": "appetizer"
+          },
+          "name": "Bruschetta",
+          "price": "5.99",
+          "allergyTags": "gluten"
+        },
+        {
+          "@attributes": {
+            "id": "106",
+            "type": "drink"
+          },
+          "name": "Cappuccino",
+          "price": "4.00",
+          "allergyTags": "dairy"
+        },
+        {
+          "@attributes": {
+            "id": "107",
+            "type": "main"
+          },
+          "name": "Vegetarian Pizza",
+          "price": "12.00",
+          "allergyTags": "gluten"
+        },
+        {
+          "@attributes": {
+            "id": "108",
+            "type": "drink"
+          },
+          "name": "Vesi",
+          "price": "1.5",
+          "allergyTags": "none"
+        },
+        {
+          "@attributes": {
+            "id": "109",
+            "type": "main"
+          },
+          "name": "Fish with Mushrooms",
+          "price": "19.99",
+          "allergyTags": "fish,mushrooms,egg,cianid"
+        },
+        {
+          "@attributes": {
+            "id": "110",
+            "type": "main"
+          },
+          "name": "Pizza Peperoni",
+          "price": "11.99",
+          "allergyTags": "casein, gluten"
+        }
+      ]
+    },
+    "staff": {
+      "employee": [
+        {
+          "@attributes": {
+            "id": "e01",
+            "role": "waiter"
+          },
+          "name": "John Smith"
+        },
+        {
+          "@attributes": {
+            "id": "e02",
+            "role": "chef"
+          },
+          "name": "Emily Johnson"
+        },
+        {
+          "@attributes": {
+            "id": "e03",
+            "role": "waiter"
+          },
+          "name": "Mark Sumenkov"
+        },
+        {
+          "@attributes": {
+            "id": "e04",
+            "role": "chef"
+          },
+          "name": "Viktoria Foterro"
+        }
+      ]
+    },
+    "orders": {
+      "order": [
+        {
+          "@attributes": {
+            "id": "5001",
+            "tableId": "1",
+            "waiterId": "e01",
+            "customerUserName": "customer1"
+          },
+          "orderItems": {
+            "item": [
+              {
+                "@attributes": {
+                  "dishId": "103",
+                  "quantity": "2"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "104",
+                  "quantity": "3"
+                }
+              }
+            ]
+          },
+          "customerPreferences": {
+            "preference": [
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Red Wine",
+                  "description": "2 glasses"
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Chicken Alfredo Pasta",
+                  "description": "extra souce"
+                }
+              }
+            ]
+          },
+          "status": "active"
+        },
+        {
+          "@attributes": {
+            "id": "5002",
+            "tableId": "1",
+            "waiterId": "e01",
+            "customerUserName": "customer1"
+          },
+          "orderItems": {
+            "item": [
+              {
+                "@attributes": {
+                  "dishId": "103",
+                  "quantity": "2"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "104",
+                  "quantity": "3"
+                }
+              }
+            ]
+          },
+          "customerPreferences": {
+            "preference": [
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Red Wine",
+                  "description": "2 glasses"
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Chicken Alfredo Pasta",
+                  "description": "extra souce"
+                }
+              }
+            ]
+          },
+          "status": "completed"
+        },
+        {
+          "@attributes": {
+            "id": "5003",
+            "tableId": "3",
+            "waiterId": "e01",
+            "customerUserName": "customer1"
+          },
+          "orderItems": {
+            "item": [
+              {
+                "@attributes": {
+                  "dishId": "101",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "102",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "103",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "104",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "105",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "106",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "107",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "108",
+                  "quantity": "25"
+                }
+              },
+              {
+                "@attributes": {
+                  "dishId": "109",
+                  "quantity": "25"
+                }
+              }
+            ]
+          },
+          "customerPreferences": {
+            "preference": [
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Grilled Salmon",
+                  "description": "sugar"
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Caesar Salad",
+                  "description": ""
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Red Wine",
+                  "description": "grilled"
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Chicken Alfredo Pasta",
+                  "description": ""
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Bruschetta",
+                  "description": ""
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Cappuccino",
+                  "description": "no coffeine"
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Vegetarian Pizza",
+                  "description": ""
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Vesi",
+                  "description": "96%"
+                }
+              },
+              {
+                "@attributes": {
+                  "type": "preference",
+                  "dish": "Fish with Mushrooms",
+                  "description": ""
+                }
+              }
+            ]
+          },
+          "status": "served"
+        },
+        {
+          "@attributes": {
+            "name": "Taste of Pain",
+            "address": "Vanalinna 1"
+          },
+          "tables": {
+            "table": [
+              {
+                "@attributes": {
+                  "id": "1",
+                  "seats": "4",
+                  "occupied": "false"
+                }
+              },
+              {
+                "@attributes": {
+                  "id": "2",
+                  "seats": "2",
+                  "occupied": "true"
+                }
+              },
+              {
+                "@attributes": {
+                  "id": "3",
+                  "seats": "6",
+                  "occupied": "false"
+                }
+              },
+              {
+                "@attributes": {
+                  "id": "4",
+                  "seats": "3",
+                  "occupied": "true"
+                }
+              },
+              {
+                "@attributes": {
+                  "id": "5",
+                  "seats": "4",
+                  "occupied": "false"
+                }
+              }
+            ]
+          },
+          "menu": {
+            "dish": [
+              {
+                "@attributes": {
+                  "id": "101",
+                  "type": "main"
+                },
+                "name": "Grilled Salmon",
+                "price": "15.99",
+                "allergyTags": "fish"
+              },
+              {
+                "@attributes": {
+                  "id": "102",
+                  "type": "appetizer"
+                },
+                "name": "Caesar Salad",
+                "price": "7.50",
+                "allergyTags": "nuts"
+              },
+              {
+                "@attributes": {
+                  "id": "103",
+                  "type": "drink"
+                },
+                "name": "Red Wine",
+                "price": "8.00",
+                "allergyTags": "none"
+              },
+              {
+                "@attributes": {
+                  "id": "104",
+                  "type": "main"
+                },
+                "name": "Chicken Alfredo Pasta",
+                "price": "13.50",
+                "allergyTags": "dairy, gluten"
+              },
+              {
+                "@attributes": {
+                  "id": "105",
+                  "type": "appetizer"
+                },
+                "name": "Bruschetta",
+                "price": "5.99",
+                "allergyTags": "gluten"
+              },
+              {
+                "@attributes": {
+                  "id": "106",
+                  "type": "drink"
+                },
+                "name": "Cappuccino",
+                "price": "4.00",
+                "allergyTags": "dairy"
+              },
+              {
+                "@attributes": {
+                  "id": "107",
+                  "type": "main"
+                },
+                "name": "Vegetarian Pizza",
+                "price": "12.00",
+                "allergyTags": "gluten"
+              },
+              {
+                "@attributes": {
+                  "id": "108",
+                  "type": "drink"
+                },
+                "name": "Vesi",
+                "price": "1.5",
+                "allergyTags": "none"
+              },
+              {
+                "@attributes": {
+                  "id": "109",
+                  "type": "main"
+                },
+                "name": "Fish with Mushrooms",
+                "price": "19.99",
+                "allergyTags": "fish,mushrooms,egg,cianid"
+              },
+              {
+                "@attributes": {
+                  "id": "110",
+                  "type": "main"
+                },
+                "name": "Pizza Peperoni",
+                "price": "11.99",
+                "allergyTags": "casein, gluten"
+              }
+            ]
+          },
+          "orders": {
+            "order": [
+              {
+                "@attributes": {
+                  "id": "5001",
+                  "tableId": "1",
+                  "waiterId": "e01",
+                  "customerUserName": "customer1"
+                },
+                "orderItems": {
+                  "item": [
+                    {
+                      "@attributes": {
+                        "dishId": "103",
+                        "quantity": "2"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "104",
+                        "quantity": "3"
+                      }
+                    }
+                  ]
+                },
+                "customerPreferences": {
+                  "preference": [
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Red Wine",
+                        "description": "2 glasses"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Chicken Alfredo Pasta",
+                        "description": "extra souce"
+                      }
+                    }
+                  ]
+                },
+                "status": "active"
+              },
+              {
+                "@attributes": {
+                  "id": "5002",
+                  "tableId": "1",
+                  "waiterId": "e01",
+                  "customerUserName": "customer1"
+                },
+                "orderItems": {
+                  "item": [
+                    {
+                      "@attributes": {
+                        "dishId": "103",
+                        "quantity": "2"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "104",
+                        "quantity": "3"
+                      }
+                    }
+                  ]
+                },
+                "customerPreferences": {
+                  "preference": [
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Red Wine",
+                        "description": "2 glasses"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Chicken Alfredo Pasta",
+                        "description": "extra souce"
+                      }
+                    }
+                  ]
+                },
+                "status": "completed"
+              },
+              {
+                "@attributes": {
+                  "id": "5003",
+                  "tableId": "3",
+                  "waiterId": "e01",
+                  "customerUserName": "customer1"
+                },
+                "orderItems": {
+                  "item": [
+                    {
+                      "@attributes": {
+                        "dishId": "101",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "102",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "103",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "104",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "105",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "106",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "107",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "108",
+                        "quantity": "25"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "dishId": "109",
+                        "quantity": "25"
+                      }
+                    }
+                  ]
+                },
+                "customerPreferences": {
+                  "preference": [
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Grilled Salmon",
+                        "description": "sugar"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Caesar Salad",
+                        "description": ""
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Red Wine",
+                        "description": "grilled"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Chicken Alfredo Pasta",
+                        "description": ""
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Bruschetta",
+                        "description": ""
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Cappuccino",
+                        "description": "no coffeine"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Vegetarian Pizza",
+                        "description": ""
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Vesi",
+                        "description": "96%"
+                      }
+                    },
+                    {
+                      "@attributes": {
+                        "type": "preference",
+                        "dish": "Fish with Mushrooms",
+                        "description": ""
+                      }
+                    }
+                  ]
+                },
+                "status": "served"
+              }
+            ]
+          }
+        },
+        {
+          "users": [
+            {
+              "id": "u01",
+              "name": "John Smith",
+              "username": "johnsmith",
+              "password": "john123",
+              "role": "waiter"
+            },
+            {
+              "id": "u02",
+              "name": "Emily Davis",
+              "username": "emilydavis",
+              "password": "emily456",
+              "role": "chef"
+            },
+            {
+              "id": "u03",
+              "name": "Mister Customer",
+              "username": "customer1",
+              "password": "qwe123",
+              "role": "client"
+            },
+            {
+              "id": "u04",
+              "name": "Mark Sumenkov",
+              "username": "sumenkov",
+              "password": "qwe123",
+              "role": "waiter"
+            },
+            {
+              "id": "u05",
+              "name": "Viktoria Foterro",
+              "username": "foterro",
+              "password": "povar123",
+              "role": "chef"
+            }
+          ]
+        }
+      ]
+    }
+  }
